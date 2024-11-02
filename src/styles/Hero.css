@@ -74,6 +74,7 @@ body {
   transition: left 0.3s ease, top 0.3s ease;
 }
 
+
 /* Responsive Design for Tablets */
 @media (max-width: 1024px) {
   /* Hero Image */

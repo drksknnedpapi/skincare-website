@@ -15,7 +15,10 @@ const About = () => {
             <div className="about-content">
               <span id='subtext-3'>SKINCARE THAT PUTS YOUR STORY FIRST</span>
               <span id='subtext-4'>BORN IN ACCRA</span>
-              <span id='subtex-5'>PhilyCare is a proud distributor of foreign skincare products that are designed and tailored to meet your needs. We cater for people of character.</span>
+              <span id='subtext-5'>PhilyCare is a proud distributor of foreign skincare products that are designed and tailored to meet your needs. We cater for people of character.Serving Ghana with passion. From the beaches of The Cape Coast, to the vibrancy of the North, We Deliver.</span>
+              <a href="http://" target="_blank" rel="noopener noreferrer">
+              <button className='button' id='order-now-btn'>Order Now</button>
+              </a>
             </div>
         </div>
       </section>
