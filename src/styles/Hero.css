@@ -1,0 +1,301 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  color: #333;
+  background-color: #f3f3f3;
+  overflow-x: hidden;
+}
+
+/* Hero Image */
+.hero-img {
+  width: 450px;
+  left: 68%;
+  position: relative;
+  z-index: 1;
+  image-rendering: optimizeQuality;
+  transition: width 0.3s ease;
+}
+
+/* Hero Content */
+.hero-content {
+  font-size: 15rem;
+  font-family: "Playfair Display", serif;
+  position: absolute;
+  top: 0;
+  transition: font-size 0.3s ease;
+}
+
+/* Titles */
+#title-1 {
+  position: absolute;
+  left: 280px;
+  top: 150px;
+  transition: left 0.3s ease, top 0.3s ease, font-size 0.3s ease;
+}
+
+#title-2 {
+  position: absolute;
+  top: 360px;
+  left: 70px;
+  transition: left 0.3s ease, top 0.3s ease, font-size 0.3s ease;
+}
+
+#title-3 {
+  position: absolute;
+  left: 810px;
+  top: 635px;
+}
+
+/* Subtexts */
+#subtext-1,
+#subtext-2 {
+  font-size: 15px;
+  font-family: "Helvetica Neue", sans-serif;
+  transition: font-size 0.3s ease;
+}
+
+#subtext-1 {
+  position: absolute;
+  left: 870px;
+  top: 60px;
+  transition: left 0.3s ease, top 0.3s ease;
+}
+
+#subtext-2 {
+  position: absolute;
+  line-height: normal;
+  left: 800px;
+  top: 540px;
+  transition: left 0.3s ease, top 0.3s ease;
+}
+
+/* Responsive Design for Tablets */
+@media (max-width: 1024px) {
+  /* Hero Image */
+  .hero-img {
+    width: 400px;
+    left: 48%;
+    image-rendering: optimizeQuality;
+    transition: width 0.3s ease;
+  }
+
+  /* Hero Content */
+  .hero-content {
+    font-size: 7rem;
+    top: 0;
+    transition: font-size 0.3s ease;
+  }
+
+  /* Titles */
+  #title-1 {
+    left: 50px;
+    top: 170px;
+    transition: left 0.3s ease, top 0.3s ease, font-size 0.3s ease;
+  }
+
+  #title-2 {
+    top: 290px;
+    left: 15px;
+    transition: left 0.3s ease, top 0.3s ease, font-size 0.3s ease;
+  }
+
+  #title-3 {
+    left: 610px;
+    top: 400px;
+  }
+
+  /* Subtexts */
+  #subtext-1,
+  #subtext-2 {
+    font-size: 14px;
+    transition: font-size 0.3s ease;
+  }
+
+  #subtext-1 {
+    left: 250px;
+    top: 90px;
+    transition: left 0.3s ease, top 0.3s ease;
+  }
+
+  #subtext-2 {
+    left: 50px;
+    top: 540px;
+    transition: left 0.3s ease, top 0.3s ease;
+  }
+}
+
+
+
+
+
+
+
+/*                                                                                *\
+
+
+                Screen Adjustments for iPad Air 2
+
+\*                                                                               */
+
+
+@media (max-width: 1440px) {
+    .hero-img {
+        width: 350px;
+        left: 65%;
+        top: 30px;
+        image-rendering: optimizeQuality;
+        transition: width 0.3s ease;
+      }
+    
+      /* Hero Content */
+      .hero-content {
+        font-size: 8rem;
+        top: 0;
+        transition: font-size 0.3s ease;
+      }
+    
+      /* Titles */
+      #title-1 {
+        left: 285px;
+        top: 150px;
+        transition: left 0.3s ease, top 0.3s ease, font-size 0.3s ease;
+      }
+    
+      #title-2 {
+        top: 270px;
+        left: 75px;
+        transition: left 0.3s ease, top 0.3s ease, font-size 0.3s ease;
+      }
+      #title-3 {
+        left: 350px;
+        top: 400px;
+      }
+    
+      /* Subtexts */
+      #subtext-1,
+      #subtext-2 {
+        font-size: 12px;
+        transition: font-size 0.3s ease;
+      }
+    
+      #subtext-1 {
+        left: 580px;
+        top: 110px;
+        transition: left 0.3s ease, top 0.3s ease;
+      }
+    
+      #subtext-2 {
+        left: 30px;
+        top: 500px;
+        transition: left 0.3s ease, top 0.3s ease;
+      }
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    .hero-img {
+        width: 100%;
+        left: 0;
+        top: 30px;
+        image-rendering: optimizeQuality;
+        transition: width 0.3s ease;
+      }
+    
+      /* Hero Content */
+      .hero-content {
+        font-size: 7rem;
+        top: 0;
+        transition: font-size 0.3s ease;
+      }
+    
+      /* Titles */
+      #title-1 {
+        left: 55px;
+        top: 740px;
+        transition: left 0.3s ease, top 0.3s ease, font-size 0.3s ease;
+      }
+    
+      #title-2 {
+        top: 850px;
+        left: 75px;
+        transition: left 0.3s ease, top 0.3s ease, font-size 0.3s ease;
+      }
+    
+      /* Subtexts */
+      #subtext-1,
+      #subtext-2 {
+        font-size: 12px;
+        transition: font-size 0.3s ease;
+      }
+    
+      #subtext-1 {
+        left: 380px;
+        top: 790px;
+        transition: left 0.3s ease, top 0.3s ease;
+      }
+    
+      #subtext-2 {
+        left: 30px;
+        top: 1010px;
+        transition: left 0.3s ease, top 0.3s ease;
+      }
+}
+
+/* Extra Small Screens */
+@media (max-width: 480px) {
+    body {
+        width: 100vw;
+    }
+
+    .hero-img {
+        width: 100%;
+        left: 0;
+        top: 20px;
+        image-rendering: optimizeQuality;
+        transition: width 0.3s ease;
+      }
+    
+      /* Hero Content */
+      .hero-content {
+        font-size: 4rem;
+        top: 0;
+        transition: font-size 0.3s ease;
+      }
+    
+      /* Titles */
+      #title-1 {
+        left: 55px;
+        top: 540px;
+        transition: left 0.3s ease, top 0.3s ease, font-size 0.3s ease;
+      }
+    
+      #title-2 {
+        top: 620px;
+        left: 75px;
+        transition: left 0.3s ease, top 0.3s ease, font-size 0.3s ease;
+      }
+    
+      /* Subtexts */
+      #subtext-1,
+      #subtext-2 {
+        font-size: 12px;
+        transition: font-size 0.3s ease;
+      }
+    
+      #subtext-1 {
+        left: 240px;
+        top: 540px;
+        transition: left 0.3s ease, top 0.3s ease;
+      }
+    
+      #subtext-2 {
+        left: 20px;
+        top: 710px;
+        transition: left 0.3s ease, top 0.3s ease;
+      }
+}

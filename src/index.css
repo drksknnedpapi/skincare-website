@@ -1,0 +1,119 @@
+
+
+
+/*                                      *\
+
+          FONTS IMPORT
+
+\*                                      */
+
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-5');
+
+
+
+
+.playfair-display-playfair {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/*Reset*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Colors */
+
+:root {
+  --primary-color: #FF6F61;             /* --> Main Brand Color*/
+  --secondary-color: #F7C6A8;       /*-->Secondary Color*/
+  --accent-color: #4A4A4A;            /*--> Accent Color */
+  --background-color: #FFFFFF;     /*--> Background Color*/
+  --header-color: #2D2D2D;          /*-->Header Text Color*/  
+  --footer-color: #333333;             /*--> Footer Text Color */
+  --link-color: #FF6F61;                  /*--> Link Color */
+  --link-hover-color: #D45D4A;     /*--> Link Hover Color */
+}
+
+/* Fonts */
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif; /* Primary Font*/
+  font-size: 16px;  /*Base Font Size*/
+  line-height: 1.5;  /* Line Height*/
+  background-color: var(--background-color);
+}
+
+/* Headings */
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;   /*Font for the Headings */
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font: 2rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+
+/*Button Styles */
+.button {
+  background-color: var(--primary-color);
+  color: #FFFFFF;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: var(--accent-color);
+}
+
+/* Links */
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--accent-color);
+}
+
+/* --Footer Styles-- */
+
+footer {
+  background-color: var(--footer-color);
+  color: #FFFFFF;
+  padding: 20px;
+  text-align: center;
+}
+
+/* General Styles */
+
+.container {
+  max-width: 100vw;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.section {
+  padding: 48px 0;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.159);
+  z-index: 1;
+  position: absolute
+}

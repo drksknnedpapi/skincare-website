@@ -1,0 +1,30 @@
+.about-container {
+    height: 100vh;
+    width: 100vw;
+}
+.section {
+    height: 100vh;
+
+}
+#image-1 , #image-2 {
+    position: absolute;
+}
+
+#image-1 {
+    width: 400px;
+    left: -10px;
+    bottom: -580px;
+    overflow-y: hidden;
+}
+#image-2 {
+    width: 370px;
+    right: 30px;
+    bottom: -680px;
+}
+
+.about-content {
+    font-family: 'Helvetica Neue', sans-serif;
+}
+#subtext-3, #subtext-4, #subtext-5  {
+    position: absolute;
+}
