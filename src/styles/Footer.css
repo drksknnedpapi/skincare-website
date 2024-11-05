@@ -1,0 +1,22 @@
+footer {
+    position: absolute;
+    width: 100%;
+    height: 15%;
+    color: white;
+    bottom: -170%;
+}
+
+footer div {
+    width: 20%;
+    text-align: left;
+    position: absolute;
+    bottom: 10%;
+}
+footer div ul {
+    list-style: none;
+    font-family: 'Helvetica Neue', serif;
+}
+footer div ul li a{
+    color: white;
+    font-weight: 200;
+}

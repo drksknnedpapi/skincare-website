@@ -7,11 +7,10 @@ import { whiteGirlThinking } from "../assets";
 const Hero = () => {
   return (
     <article>
-      <div className="overlay" />
       <section className="section">
         <div className="container">
-          <img src={whiteGirlThinking} alt={whiteGirlThinking} className="hero-img" />
-          <div class="hero-content">
+          <img src={whiteGirlThinking} alt={whiteGirlThinking} className="hero-img" /> 
+          <div className="hero-content">
             <span id="title-1">Active</span>
             <span id="title-2">Face</span>
             <span id="title-3">Oils.</span>

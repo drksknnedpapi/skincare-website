@@ -33,7 +33,7 @@ body {
 /* Titles */
 #title-1 {
   position: absolute;
-  left: 280px;
+  left: 240px;
   top: 150px;
   transition: left 0.3s ease, top 0.3s ease, font-size 0.3s ease;
 }
@@ -74,229 +74,774 @@ body {
   transition: left 0.3s ease, top 0.3s ease;
 }
 
+/*                                                                                      *\
+                       SCREEN ADJUSTMENTS
+\*                                                                                      */
 
-/* Responsive Design for Tablets */
-@media (max-width: 1024px) {
-  /* Hero Image */
+/*Screen Adjustment For Small Phone Sizes with Width of 320px - Portrait*/
+
+@media ((max-width: 330px) and (max-height: 580px)) {
+
   .hero-img {
-    width: 400px;
-    left: 48%;
-    image-rendering: optimizeQuality;
+    width: 96%;
+    position: absolute;
+    left: 0%;
+    z-index: 0;
+    top: 40%;
     transition: width 0.3s ease;
   }
+  .container {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
 
-  /* Hero Content */
   .hero-content {
-    font-size: 7rem;
-    top: 0;
+    width: 100vw;
+    height: 90%;
+    font-size: 4rem;
     transition: font-size 0.3s ease;
   }
 
-  /* Titles */
   #title-1 {
-    left: 50px;
-    top: 170px;
+    position: absolute;
+    display: run-in;
+    left: 2px;
+    top: 7%;
     transition: left 0.3s ease, top 0.3s ease, font-size 0.3s ease;
   }
 
   #title-2 {
-    top: 290px;
-    left: 15px;
+    position: absolute;
+    display: run-in;
+    top: 16%;
+    left: 25%;
     transition: left 0.3s ease, top 0.3s ease, font-size 0.3s ease;
   }
 
   #title-3 {
-    left: 610px;
-    top: 400px;
+    position: absolute;
+    display: run-in;
+    top: 25%;
+    left: 45%;
+    transition: left 0.3s ease, top 0.3s ease, font-size 0.3s ease;
   }
 
-  /* Subtexts */
   #subtext-1,
   #subtext-2 {
-    font-size: 14px;
+    font-size: 8px;
+    display: run-in;
+    position: absolute;
     transition: font-size 0.3s ease;
   }
 
   #subtext-1 {
-    left: 250px;
-    top: 90px;
+    left: 79%;
+    top: 9%;
     transition: left 0.3s ease, top 0.3s ease;
   }
 
   #subtext-2 {
-    left: 50px;
-    top: 540px;
+    top: 38%;
+    left: 0%;
+    transition: left 0.3s ease, top 0.3s ease;
+  }
+}
+
+/*Screen Adjustment For Small Phone Sizes with Width of 320px - Landscape*/
+
+@media ((max-width: 570px) and (max-height: 330px)) {
+  .hero-img {
+    width: 250px;
+    position: absolute;
+    left: 11px;
+    top: 30%;
+    transition: width 0.3s ease;
+  }
+  .container {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .hero-content {
+    width: 100vw;
+    height: 100%;
+    font-size: 4rem;
+    transition: font-size 0.3s ease;
+  }
+
+  #title-1 {
+    position: absolute;
+    display: run-in;
+    left: 53%;
+    top: 37%;
+    transition: left 0.3s ease, top 0.3s ease, font-size 0.3s ease;
+  }
+
+  #title-2 {
+    position: absolute;
+    display: run-in;
+    top: 65%;
+    left: 70%;
+    transition: left 0.3s ease, top 0.3s ease, font-size 0.3s ease;
+  }
+
+  #title-3 {
+    position: absolute;
+    display: run-in;
+    top: 88%;
+    left: 55%;
+    transition: left 0.3s ease, top 0.3s ease, font-size 0.3s ease;
+  }
+
+  #subtext-1,
+  #subtext-2 {
+    font-size: 12px;
+    display: run-in;
+    position: absolute;
+    transition: font-size 0.3s ease;
+  }
+
+  #subtext-1 {
+    left: 89%;
+    top: 33%;
+    transition: left 0.3s ease, top 0.3s ease;
+  }
+
+  #subtext-2 {
+    top: 124%;
+    left: 80%;
+    transition: left 0.3s ease, top 0.3s ease;
+  }
+}
+
+/*Screen Adjustment For Medium Phone Sizes with width of 375px - Portrait*/
+
+@media ((max-width: 380px) and (max-height: 820px)) {
+
+  .hero-img {
+    width: 98vw;
+    position: absolute;
+    left: 11px;
+    z-index: 0;
+    top: 40%;
+    transition: width 0.3s ease;
+  }
+  .container {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .hero-content {
+    width: 100vw;
+    height: 90%;
+    font-size: 4rem;
+    transition: font-size 0.3s ease;
+  }
+
+  #title-1 {
+    position: absolute;
+    display: run-in;
+    left: 2px;
+    top: 7%;
+    transition: left 0.3s ease, top 0.3s ease, font-size 0.3s ease;
+  }
+
+  #title-2 {
+    position: absolute;
+    display: run-in;
+    top: 16%;
+    left: 25%;
+    transition: left 0.3s ease, top 0.3s ease, font-size 0.3s ease;
+  }
+
+  #title-3 {
+    position: absolute;
+    display: run-in;
+    top: 25%;
+    left: 45%;
+    transition: left 0.3s ease, top 0.3s ease, font-size 0.3s ease;
+  }
+
+  #subtext-1,
+  #subtext-2 {
+    font-size: 8px;
+    display: run-in;
+    position: absolute;
+    transition: font-size 0.3s ease;
+  }
+
+  #subtext-1 {
+    left: 79%;
+    top: 9%;
+    transition: left 0.3s ease, top 0.3s ease;
+  }
+
+  #subtext-2 {
+    top: 38%;
+    left: 0%;
+    transition: left 0.3s ease, top 0.3s ease;
+  }
+}
+
+/*Screen Adjustment For Medium Phone Sizes with width of 375px - Landscape*/
+
+@media ((max-width: 820px) and (max-height: 380px)) {
+  .hero-img {
+    width: 320px;
+    position: absolute;
+    top: 30%;
+    transition: width 0.3s ease;
+  }
+  .container {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .hero-content {
+    width: 98%;
+    height: 100%;
+    font-size: 6rem;
+    transition: font-size 0.3s ease;
+  }
+
+  #title-1 {
+    position: absolute;
+    display: run-in;
+    left: 53%;
+    top: 37%;
+    transition: left 0.3s ease, top 0.3s ease, font-size 0.3s ease;
+  }
+
+  #title-2 {
+    position: absolute;
+    display: run-in;
+    top: 65%;
+    left: 70%;
+    transition: left 0.3s ease, top 0.3s ease, font-size 0.3s ease;
+  }
+
+  #title-3 {
+    position: absolute;
+    display: run-in;
+    top: 88%;
+    left: 55%;
+    transition: left 0.3s ease, top 0.3s ease, font-size 0.3s ease;
+  }
+
+  #subtext-1,
+  #subtext-2 {
+    font-size: 12px;
+    display: run-in;
+    position: absolute;
+    transition: font-size 0.3s ease;
+  }
+
+  #subtext-1 {
+    left: 89%;
+    top: 33%;
+    transition: left 0.3s ease, top 0.3s ease;
+  }
+
+  #subtext-2 {
+    top: 124%;
+    left: 80%;
+    transition: left 0.3s ease, top 0.3s ease;
+  }
+}
+
+/*Screen Adjustment For Large Phone Sizes with width of 425px - Portrait*/
+
+@media ((max-width: 430px) and (max-height: 930px)) {
+  .hero-img {
+    width: 98vw;
+    position: absolute;
+    left: 11px;
+    z-index: 0;
+    top: 40%;
+    transition: width 0.3s ease;
+  }
+  .container {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .hero-content {
+    width: 100vw;
+    height: 90%;
+    font-size: 4rem;
+    transition: font-size 0.3s ease;
+  }
+
+  #title-1 {
+    position: absolute;
+    display: run-in;
+    left: 2px;
+    top: 7%;
+    transition: left 0.3s ease, top 0.3s ease, font-size 0.3s ease;
+  }
+
+  #title-2 {
+    position: absolute;
+    display: run-in;
+    top: 16%;
+    left: 25%;
+    transition: left 0.3s ease, top 0.3s ease, font-size 0.3s ease;
+  }
+
+  #title-3 {
+    position: absolute;
+    display: run-in;
+    top: 25%;
+    left: 45%;
+    transition: left 0.3s ease, top 0.3s ease, font-size 0.3s ease;
+  }
+
+  #subtext-1,
+  #subtext-2 {
+    font-size: 8px;
+    display: run-in;
+    position: absolute;
+    transition: font-size 0.3s ease;
+  }
+
+  #subtext-1 {
+    left: 79%;
+    top: 9%;
+    transition: left 0.3s ease, top 0.3s ease;
+  }
+
+  #subtext-2 {
+    top: 38%;
+    left: 0%;
+    transition: left 0.3s ease, top 0.3s ease;
+  }
+}
+
+/*Screen Adjustment for Large Phone Sizes with width of 425px - Landscape */
+
+@media ((max-width: 930px) and (max-height: 430px)) {
+  .hero-img {
+    width: 320px;
+    position: absolute;
+    top: 30%;
+    transition: width 0.3s ease;
+  }
+  .container {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .hero-content {
+    width: 98%;
+    height: 100%;
+    font-size: 6rem;
+    transition: font-size 0.3s ease;
+  }
+
+  #title-1 {
+    position: absolute;
+    display: run-in;
+    left: 3%;
+    top: 37%;
+    transition: left 0.3s ease, top 0.3s ease, font-size 0.3s ease;
+  }
+
+  #title-2 {
+    position: absolute;
+    display: run-in;
+    top: 65%;
+    left: 20%;
+    transition: left 0.3s ease, top 0.3s ease, font-size 0.3s ease;
+  }
+
+  #title-3 {
+    position: absolute;
+    display: run-in;
+    top: 88%;
+    left: 35%;
+    transition: left 0.3s ease, top 0.3s ease, font-size 0.3s ease;
+  }
+
+  #subtext-1,
+  #subtext-2 {
+    font-size: 12px;
+    display: run-in;
+    position: absolute;
+    transition: font-size 0.3s ease;
+  }
+
+  #subtext-1 {
+    left: 49%;
+    top: 43%;
+    transition: left 0.3s ease, top 0.3s ease;
+  }
+
+  #subtext-2 {
+    top: 114%;
+    left: 2lvi;
     transition: left 0.3s ease, top 0.3s ease;
   }
 }
 
 
+/* Small Tablets and iPads (600px to 768px width) - Portrait*/
+@media (min-width: 600px) and (max-width: 769px) and (min-height: 800px) and (max-height: 1025px) {
+  .hero-img {
+    width: 78vw;
+    position: absolute;
+    left: 11%;
+    z-index: 0;
+    top: 40%;
+    transition: width 0.3s ease;
+  }
+  .container {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
 
+  .hero-content {
+    width: 100vw;
+    height: 100%;
+    font-size: 6rem;
+    transition: font-size 0.3s ease;
+  }
 
+  #title-1 {
+    position: absolute;
+    display: run-in;
+    left: 9%;
+    top: 9%;
+    transition: left 0.3s ease, top 0.3s ease, font-size 0.3s ease;
+  }
 
+  #title-2 {
+    position: absolute;
+    display: run-in;
+    top: 18%;
+    left: 30%;
+    transition: left 0.3s ease, top 0.3s ease, font-size 0.3s ease;
+  }
 
+  #title-3 {
+    position: absolute;
+    display: run-in;
+    top: 27%;
+    left: 50%;
+    transition: left 0.3s ease, top 0.3s ease, font-size 0.3s ease;
+  }
 
-/*                                                                                *\
+  #subtext-1,
+  #subtext-2 {
+    font-size: 16px;
+    display: run-in;
+    position: absolute;
+    transition: font-size 0.3s ease;
+  }
 
+  #subtext-1 {
+    left: 78%;
+    top: 13%;
+    transition: left 0.3s ease, top 0.3s ease;
+  }
 
-                Screen Adjustments for iPad Air 2
+  #subtext-2 {
+    top: 36%;
+    left: 5%;
+    transition: left 0.3s ease, top 0.3s ease;
+  }
 
-\*                                                                               */
-
-
-@media (max-width: 1440px) {
-    .hero-img {
-        width: 350px;
-        left: 65%;
-        top: 30px;
-        image-rendering: optimizeQuality;
-        transition: width 0.3s ease;
-      }
-    
-      /* Hero Content */
-      .hero-content {
-        font-size: 8rem;
-        top: 0;
-        transition: font-size 0.3s ease;
-      }
-    
-      /* Titles */
-      #title-1 {
-        left: 285px;
-        top: 150px;
-        transition: left 0.3s ease, top 0.3s ease, font-size 0.3s ease;
-      }
-    
-      #title-2 {
-        top: 270px;
-        left: 75px;
-        transition: left 0.3s ease, top 0.3s ease, font-size 0.3s ease;
-      }
-      #title-3 {
-        left: 350px;
-        top: 400px;
-      }
-    
-      /* Subtexts */
-      #subtext-1,
-      #subtext-2 {
-        font-size: 12px;
-        transition: font-size 0.3s ease;
-      }
-    
-      #subtext-1 {
-        left: 580px;
-        top: 110px;
-        transition: left 0.3s ease, top 0.3s ease;
-      }
-    
-      #subtext-2 {
-        left: 30px;
-        top: 500px;
-        transition: left 0.3s ease, top 0.3s ease;
-      }
 }
 
-/* Responsive Design for Mobile */
-@media (max-width: 768px) {
-    .hero-img {
-        width: 100%;
-        left: 0;
-        top: 30px;
-        image-rendering: optimizeQuality;
-        transition: width 0.3s ease;
-      }
-    
-      /* Hero Content */
-      .hero-content {
-        font-size: 7rem;
-        top: 0;
-        transition: font-size 0.3s ease;
-      }
-    
-      /* Titles */
-      #title-1 {
-        left: 55px;
-        top: 740px;
-        transition: left 0.3s ease, top 0.3s ease, font-size 0.3s ease;
-      }
-    
-      #title-2 {
-        top: 850px;
-        left: 75px;
-        transition: left 0.3s ease, top 0.3s ease, font-size 0.3s ease;
-      }
-    
-      /* Subtexts */
-      #subtext-1,
-      #subtext-2 {
-        font-size: 12px;
-        transition: font-size 0.3s ease;
-      }
-    
-      #subtext-1 {
-        left: 380px;
-        top: 790px;
-        transition: left 0.3s ease, top 0.3s ease;
-      }
-    
-      #subtext-2 {
-        left: 30px;
-        top: 1010px;
-        transition: left 0.3s ease, top 0.3s ease;
-      }
+/* Small Tablets and iPads (600px to 768px width) - Landscape*/
+
+@media (min-width: 800px) and (max-width: 1025px) and (min-height: 600px) and (max-height: 769px) {
+
+  .hero-img {
+    width: 40%;
+    position: absolute;
+    left: 0;
+    top: 15%;
+    transition: width 0.3s ease;
+  }
+  .container {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .hero-content {
+    width: 98%;
+    height: 100%;
+    font-size: 7rem;
+    transition: font-size 0.3s ease;
+  }
+
+  #title-1 {
+    position: absolute;
+    display: run-in;
+    left: 63%;
+    top: 37%;
+    transition: left 0.3s ease, top 0.3s ease, font-size 0.3s ease;
+  }
+
+  #title-2 {
+    position: absolute;
+    display: run-in;
+    top: 65%;
+    left: 43%;
+    transition: left 0.3s ease, top 0.3s ease, font-size 0.3s ease;
+  }
+
+  #title-3 {
+    position: absolute;
+    display: run-in;
+    top: 88%;
+    left: 15%;
+    transition: left 0.3s ease, top 0.3s ease, font-size 0.3s ease;
+  }
+
+  #subtext-1,
+  #subtext-2 {
+    font-size: 15px;
+    display: run-in;
+    position: absolute;
+    transition: font-size 0.3s ease;
+  }
+
+  #subtext-1 {
+    left: 49%;
+    top: 33%;
+    transition: left 0.3s ease, top 0.3s ease;
+  }
+
+  #subtext-2 {
+    top: 84%;
+    left: 90%;
+    transition: left 0.3s ease, top 0.3s ease;
+  }
+
 }
 
-/* Extra Small Screens */
-@media (max-width: 480px) {
-    body {
-        width: 100vw;
-    }
 
-    .hero-img {
-        width: 100%;
-        left: 0;
-        top: 20px;
-        image-rendering: optimizeQuality;
-        transition: width 0.3s ease;
-      }
-    
-      /* Hero Content */
-      .hero-content {
-        font-size: 4rem;
-        top: 0;
-        transition: font-size 0.3s ease;
-      }
-    
-      /* Titles */
-      #title-1 {
-        left: 55px;
-        top: 540px;
-        transition: left 0.3s ease, top 0.3s ease, font-size 0.3s ease;
-      }
-    
-      #title-2 {
-        top: 620px;
-        left: 75px;
-        transition: left 0.3s ease, top 0.3s ease, font-size 0.3s ease;
-      }
-    
-      /* Subtexts */
-      #subtext-1,
-      #subtext-2 {
-        font-size: 12px;
-        transition: font-size 0.3s ease;
-      }
-    
-      #subtext-1 {
-        left: 240px;
-        top: 540px;
-        transition: left 0.3s ease, top 0.3s ease;
-      }
-    
-      #subtext-2 {
-        left: 20px;
-        top: 710px;
-        transition: left 0.3s ease, top 0.3s ease;
-      }
+/*Medium Tablets (768px to 900px width) - Portrait*/
+@media (min-width: 765px) and (max-width: 905px) and (min-height: 799px) and (max-height: 1205px) {
+  .hero-img {
+    width: 78vw;
+    position: absolute;
+    left: 11%;
+    z-index: 0;
+    top: 40%;
+    transition: width 0.3s ease;
+  }
+  .container {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .hero-content {
+    width: 100vw;
+    height: 100%;
+    font-size: 6.5rem;
+    transition: font-size 0.3s ease;
+  }
+
+  #title-1 {
+    position: absolute;
+    display: run-in;
+    left: 9%;
+    top: 9%;
+    transition: left 0.3s ease, top 0.3s ease, font-size 0.3s ease;
+  }
+
+  #title-2 {
+    position: absolute;
+    display: run-in;
+    top: 18%;
+    left: 30%;
+    transition: left 0.3s ease, top 0.3s ease, font-size 0.3s ease;
+  }
+
+  #title-3 {
+    position: absolute;
+    display: run-in;
+    top: 27%;
+    left: 50%;
+    transition: left 0.3s ease, top 0.3s ease, font-size 0.3s ease;
+  }
+
+  #subtext-1,
+  #subtext-2 {
+    font-size: 16px;
+    display: run-in;
+    position: absolute;
+    transition: font-size 0.3s ease;
+  }
+
+  #subtext-1 {
+    left: 78%;
+    top: 13%;
+    transition: left 0.3s ease, top 0.3s ease;
+  }
+
+  #subtext-2 {
+    top: 36%;
+    left: 5%;
+    transition: left 0.3s ease, top 0.3s ease;
+  }
+
 }
+
+/* Medium Tablets ( 768 to 900px width) - Landscape */
+
+@media (min-width: 799px) and (max-width: 1205px) and (min-height: 765px) and (max-height: 905px) {
+ .hero-img {
+    width: 40%;
+    position: absolute;
+    left: 0;
+    top: 15%;
+    transition: width 0.3s ease;
+  }
+  .container {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .hero-content {
+    width: 98%;
+    height: 100%;
+    font-size: 7rem;
+    transition: font-size 0.3s ease;
+  }
+
+  #title-1 {
+    position: absolute;
+    display: run-in;
+    left: 63%;
+    top: 37%;
+    transition: left 0.3s ease, top 0.3s ease, font-size 0.3s ease;
+  }
+
+  #title-2 {
+    position: absolute;
+    display: run-in;
+    top: 65%;
+    left: 43%;
+    transition: left 0.3s ease, top 0.3s ease, font-size 0.3s ease;
+  }
+
+  #title-3 {
+    position: absolute;
+    display: run-in;
+    top: 98%;
+    left: 15%;
+    transition: left 0.3s ease, top 0.3s ease, font-size 0.3s ease;
+  }
+
+  #subtext-1,
+  #subtext-2 {
+    font-size: 15px;
+    display: run-in;
+    position: absolute;
+    transition: font-size 0.3s ease;
+  }
+
+  #subtext-1 {
+    left: 49%;
+    top: 33%;
+    transition: left 0.3s ease, top 0.3s ease;
+  }
+
+  #subtext-2 {
+    top: 84%;
+    left: 90%;
+    transition: left 0.3s ease, top 0.3s ease;
+  }
+
+}
+
+
+/* Large Tablets (900px to 1024px width) - Portrait */
+@media (min-width: 899px) and (max-width: 1025px) and (min-height: 799px) and (max-height: 1367px) {
+  .hero-img {
+    width: 78vw;
+    position: absolute;
+    left: 11%;
+    z-index: 0;
+    top: 40%;
+    transition: width 0.3s ease;
+  }
+  .container {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .hero-content {
+    width: 100vw;
+    height: 100%;
+    font-size: 6.5rem;
+    transition: font-size 0.3s ease;
+  }
+
+  #title-1 {
+    position: absolute;
+    display: run-in;
+    left: 9%;
+    top: 9%;
+    transition: left 0.3s ease, top 0.3s ease, font-size 0.3s ease;
+  }
+
+  #title-2 {
+    position: absolute;
+    display: run-in;
+    top: 18%;
+    left: 30%;
+    transition: left 0.3s ease, top 0.3s ease, font-size 0.3s ease;
+  }
+
+  #title-3 {
+    position: absolute;
+    display: run-in;
+    top: 27%;
+    left: 50%;
+    transition: left 0.3s ease, top 0.3s ease, font-size 0.3s ease;
+  }
+
+  #subtext-1,
+  #subtext-2 {
+    font-size: 16px;
+    display: run-in;
+    position: absolute;
+    transition: font-size 0.3s ease;
+  }
+
+  #subtext-1 {
+    left: 78%;
+    top: 13%;
+    transition: left 0.3s ease, top 0.3s ease;
+  }
+
+  #subtext-2 {
+    top: 36%;
+    left: 5%;
+    transition: left 0.3s ease, top 0.3s ease;
+  }
+
+}
+
+
+/*
+ Large Tablets (More than 1024px width, e.g., iPad Pro) 
+@media (min-width: 1024px) and (max-width: 1366px) and (min-height: 800px) and (max-height: 1366px) {
+
+}
+*/
