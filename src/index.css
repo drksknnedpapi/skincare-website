@@ -19,6 +19,13 @@
   font-style: normal;
 }
 
+.bodoni-moda-sc-bodoni {
+  font-family: "Bodoni Moda SC", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
 /*Reset*/
 *{
   margin: 0;
@@ -101,7 +108,7 @@ footer {
 /* General Styles */
 
 .container {
-  max-width: 100vw;
+  max-width: 100%;
   height: max-content;
   margin: 0 auto;
   padding: 5px;
@@ -111,25 +118,4 @@ footer {
   padding: 48px 0;
   height: 100vh;
   max-height: 170vh;
-}
-
-
-/* Default Devices Widths ( Min and Max )*/
-
-:root {
-  /* iPhone X */
-  --iphone-x-width: 375px;
-  --iphone-x-height: 812px;
-
-  /* iPhone XR */
-  --iphone-xr-width: 414px;
-  --iphone-xr-height: 896px;
-
-  /* iPad Air */
-  --ipad-air-width: 820px;
-  --ipad-air-height: 1180px;
-
-  /* iPad Pro */
-  --ipad-pro-width: 1024px;
-  --ipad-pro-height: 1366px;
 }

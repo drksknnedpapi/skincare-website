@@ -72,12 +72,21 @@
   transition: left 0.3s ease, top 0.3s ease;
 }
 
+#title-4, #title-5 {
+  display: run-in;
+  position: absolute;
+}
+
 #title-4 {
- display: run-in;
- position: absolute;
+  font-size: 8rem;
  top: 430%;
- left: 10%;
- font-size: 8rem;
+ left: 4%;
+}
+#title-5 {
+  font-size: 2rem;
+  font-weight: 700;
+  left: 40%;
+  top: 130%;
 }
 
 #order-now-btn {
@@ -90,91 +99,561 @@
 
 /*                                                                    *\
 
-                SCREEN ADJUSTMENTS
+  SCREEN ADJUSTMENTS
 
 \*                                                                    */
 
-/* Small Phones with min -widths of (320px ) and max-height of (580px)- Portrait */
+/* Small Phones = Portrait */
 
-@media ((max-width: 330px) and (max-height: 580px)) {
-  .about-content {
-    width: 100vw;
-    font-size: 4rem;
-    position: relative;
-    transition: font-size 0.3s ease;
-  }
-
-  #image-1 {
-    display: none;
-  }
-  #image-2 {
-    display: none;
-  }
-  #image-3 {
-    display: none;
-  }
-
-  #subtext-3, #subtext-4 {
-    font-size: 8px;
-    transition: font-size 0.3s ease;
-  }
-  #subtext-3 {
-    top: -320%;
-    width: 32%;
-    left: 60%;
-  }
-  #subtext-4 {
-    top: -95%;
-  }
-  #subtext-5 {
-    top: -280%;
-    left: 0px;
-  }
+@media (((min-width: 300px) and ( max-width: 360px)) and ((min-height: 480px) and (max-height: 600px))) {
+  
+.about-content {
+  position: relative;
+  top:10%;
+  width: 100%;
+  font-size: 3rem;
+  height: 90%;
+  transition: font-size 0.3s ease;
 }
 
-/* Small Phones with max -widths of (375px ) and max-height of (820px)- Portrait */
+#image-1,
+#image-2,
+#image-3 {
+  display: none;
+}
 
-@media ((max-width: 380px) and (max-height: 820px)) {
+
+#subtext-3,
+#subtext-4,
+#subtext-5 {
+  font-size: 14px;
+  display: run-in;
+  transition: font-size 0.3s ease;
+}
+
+#subtext-3 {
+  font-size: 10px;
+  position: absolute;
+  width: 40%;
+  top: 0%;
+  left: 50%;
+}
+
+#subtext-4 {
+  font-size: 10px;
+  position: absolute;
+  top: 78%;
+  left: 4%;
+}
+
+#subtext-5 {
+  position: relative;
+  text-wrap: wrap;
+  height: fit-content;
+  width: 80%;
+  top: 30%;
+  left: 10%;
+}
+
+
+#title-4 {
+  font-size: 3rem;
+  top: 88%;
+}
+
+#title-5 {
+  font-size: 2rem;
+  top: 15%;
+  left: 10%;
+}
+
+#order-now-btn {
+  position: absolute;
+  top: 70%;
+  left: 52%;
+  height: 40px;
+  width: 120px;
+}
+
+}
+
+/* Medium Phones - Portrait  */
+
+@media (((min-width: 360px) and ( max-width: 380px)) and ((min-height: 601px) and (max-height: 820px)))  {
   .about-content {
-    width: 100%;
-    height: 100%;
-    font-size: 4rem;
     position: relative;
-    align-content: center;
+    top:10%;
+    width: 100%;
+    font-size: 3rem;
+    height: 90%;
     transition: font-size 0.3s ease;
   }
-
-  #image-1 {
-    display: none;
-  }
-  #image-2 {
-    display: none;
-  }
+  
+  #image-1,
+  #image-2,
   #image-3 {
     display: none;
   }
   
-
-  #subtext-3, #subtext-4 {
-    font-size: 8px;
+  #subtext-3,
+  #subtext-4,
+  #subtext-5 {
+    font-size: 16px;
+    display: run-in;
     transition: font-size 0.3s ease;
   }
+  
   #subtext-3 {
-    position: relative;
-    top: -320%;
-    width: 32%;
-    left: 60%;
+    font-size: 10px;
+    position: absolute;
+    width: 40%;
+    top: -10%;
+    left: 50%;
   }
+  
   #subtext-4 {
-    position: relative;
-    top: -1005%;
+    font-size: 10px;
+    position: absolute;
+    top: 58%;
+    left: 4%;
   }
+  
   #subtext-5 {
     position: relative;
-    display: block;
+    text-wrap: wrap;
     height: fit-content;
-    width: 250px;
-    top: -98%;
-    left: -29%;
+    width: 80%;
+    top: 20%;
+    left: 10%;
+  }
+  
+  
+  #title-4 {
+    font-size: 4rem;
+    top: 65%;
+  }
+  
+  #title-5 {
+    font-size: 2rem;
+    top: 5%;
+    left: 10%;
+  }
+  
+  #order-now-btn {
+    position: absolute;
+    top: 50%;
+    left: 52%;
+    height: 40px;
+    width: 120px;
+  }
+}
+
+/*Medium Phones - Landscape */ 
+
+@media (((min-width: 601px) and ( max-width: 820px)) and ((min-height: 360px) and (max-height: 380px))) {
+    .about-content {
+      position: relative;
+      top:10%;
+      width: 100%;
+      font-size: 3rem;
+      height: 90%;
+      transition: font-size 0.3s ease;
+    }
+    
+    #image-1,
+    #image-2,
+    #image-3 {
+      display: none;
+    }
+    
+    #subtext-3,
+    #subtext-4,
+    #subtext-5 {
+      font-size: 16px;
+      display: run-in;
+      transition: font-size 0.3s ease;
+    }
+    
+    #subtext-3 {
+      font-size: 10px;
+      position: absolute;
+      width: 40%;
+      top: -10%;
+      left: 50%;
+    }
+    
+    #subtext-4 {
+      font-size: 10px;
+      position: absolute;
+      top: 58%;
+      left: 4%;
+    }
+    
+    #subtext-5 {
+      position: relative;
+      text-wrap: wrap;
+      height: fit-content;
+      width: 40%;
+      top: 20%;
+      left: 10%;
+    }
+    
+    
+    #title-4 {
+      font-size: 4rem;
+      top: 65%;
+    }
+    
+    #title-5 {
+      font-size: 2rem;
+      top: 5%;
+      left: 10%;
+    }
+    
+    #order-now-btn {
+      position: absolute;
+      top: 50%;
+      left: 52%;
+      height: 40px;
+      width: 120px;
+    }
+}
+
+/*Large Phones - Portrait*/
+@media ( ((min-width: 380px) and (max-width: 430px)) and ( (min-height: 820px) and (max-height: 930px)) )  {
+  .about-content {
+    position: relative;
+    top:10%;
+    width: 100%;
+    font-size: 3rem;
+    height: 90%;
+    transition: font-size 0.3s ease;
+  }
+  
+  #image-1,
+  #image-2,
+  #image-3 {
+    display: none;
+  }
+  
+  #subtext-3,
+  #subtext-4,
+  #subtext-5 {
+    font-size: 16px;
+    display: run-in;
+    transition: font-size 0.3s ease;
+  }
+  
+  #subtext-3 {
+    font-size: 10px;
+    position: absolute;
+    width: 40%;
+    top: -10%;
+    left: 50%;
+  }
+  
+  #subtext-4 {
+    font-size: 10px;
+    position: absolute;
+    top: 58%;
+    left: 4%;
+  }
+  
+  #subtext-5 {
+    position: relative;
+    text-wrap: wrap;
+    height: fit-content;
+    width: 80%;
+    top: 20%;
+    left: 10%;
+  }
+  
+  #title-4 {
+    font-size: 4rem;
+    top: 65%;
+  }
+  
+  #title-5 {
+    font-size: 2rem;
+    top: 5%;
+    left: 10%;
+  }
+  
+  #order-now-btn {
+    position: absolute;
+    top: 50%;
+    left: 52%;
+    height: 40px;
+    width: 120px;
+  }
+}
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Small Tablets / iPads - Portrait*/
+
+@media( ((min-width: 600px) and (max-width: 769px)) and ((min-height: 800px) and (max-height: 1025px)) ){
+  .about-content {
+    position: relative;
+    top:10%;
+    width: 100%;
+    font-size: 3rem;
+    height: 90%;
+    transition: font-size 0.3s ease;
+  }
+  
+  #image-1 {
+    display: none;
+  }
+  
+  #image-2 {
+    display: flex;
+    position: absolute;
+    width: 40%;
+    left: 55%;
+    top: 125%;
+  }
+
+  #image-3 {
+    display: flex;
+    width: 35%;
+    top: 155%;
+    left: 4%;
+    z-index: 4;
+  }
+
+  #subtext-3,
+  #subtext-4,
+  #subtext-5 {
+    font-size: 16px;
+    display: run-in;
+    transition: font-size 0.3s ease;
+  }
+  
+  #subtext-3 {
+    font-size: 10px;
+    position: absolute;
+    width: 40%;
+    top: 7%;
+    left: 50%;
+  }
+  
+  #subtext-4 {
+    font-size: 10px;
+    position: absolute;
+    top: 58%;
+    left: 80%;
+  }
+  
+  #subtext-5 {
+    position: relative;
+    text-wrap: wrap;
+    height: fit-content;
+    width: 40%;
+    top: 20%;
+    left: 10%;
+  }
+  
+  #title-4 {
+    font-size: 5rem;
+    top: 65%;
+    left: 40%;
+  }
+  
+  #title-5 {
+    font-size: 2rem;
+    top: 10%;
+    left: 10%;
+  }
+  
+  #order-now-btn {
+    position: absolute;
+    top: 50%;
+    left: 52%;
+    height: 40px;
+    width: 120px;
+  }
+}
+
+/*Medium Tablets / iPads - Portrait */
+
+@media( ((min-width: 765px) and (max-width: 905px)) and ((min-height: 1025px) and (max-height: 1205px)) ){
+  .about-content {
+    position: relative;
+    top:10%;
+    width: 100%;
+    font-size: 3rem;
+    height: 90%;
+    transition: font-size 0.3s ease;
+  }
+  
+  #image-1 {
+    display: none;
+  }
+  
+  #image-2 {
+    display: flex;
+    position: absolute;
+    width: 40%;
+    left: 55%;
+    top: 125%;
+  }
+
+  #image-3 {
+    display: flex;
+    width: 35%;
+    top: 155%;
+    left: 4%;
+    z-index: 4;
+  }
+
+  #subtext-3,
+  #subtext-4,
+  #subtext-5 {
+    font-size: 16px;
+    display: run-in;
+    transition: font-size 0.3s ease;
+  }
+  
+  #subtext-3 {
+    font-size: 10px;
+    position: absolute;
+    width: 40%;
+    top: 7%;
+    left: 50%;
+  }
+  
+  #subtext-4 {
+    font-size: 10px;
+    position: absolute;
+    top: 58%;
+    left: 80%;
+  }
+  
+  #subtext-5 {
+    position: relative;
+    text-wrap: wrap;
+    height: fit-content;
+    width: 40%;
+    top: 20%;
+    left: 10%;
+  }
+  
+  #title-4 {
+    font-size: 5rem;
+    top: 65%;
+    left: 40%;
+  }
+  
+  #title-5 {
+    font-size: 2rem;
+    top: 10%;
+    left: 10%;
+  }
+  
+  #order-now-btn {
+    position: absolute;
+    top: 50%;
+    left: 52%;
+    height: 40px;
+    width: 120px;
+  }
+}
+
+/* Large Tablets / iPads - Portrait */
+
+@media (min-width: 899px) and (max-width: 1025px) and (min-height: 1205px) and (max-height: 1367px) {
+  .about-content {
+    position: relative;
+    top:10%;
+    width: 100%;
+    font-size: 3rem;
+    height: 90%;
+    transition: font-size 0.3s ease;
+  }
+  
+  #image-1 {
+    display: none;
+  }
+  
+  #image-2 {
+    display: flex;
+    position: absolute;
+    width: 40%;
+    left: 55%;
+    top: 125%;
+  }
+
+  #image-3 {
+    display: flex;
+    width: 35%;
+    top: 155%;
+    left: 4%;
+    z-index: 4;
+  }
+
+  #subtext-3,
+  #subtext-4,
+  #subtext-5 {
+    font-size: 16px;
+    display: run-in;
+    transition: font-size 0.3s ease;
+  }
+  
+  #subtext-3 {
+    font-size: 10px;
+    position: absolute;
+    width: 40%;
+    top: 7%;
+    left: 50%;
+  }
+  
+  #subtext-4 {
+    font-size: 10px;
+    position: absolute;
+    top: 58%;
+    left: 80%;
+  }
+  
+  #subtext-5 {
+    position: relative;
+    text-wrap: wrap;
+    height: fit-content;
+    width: 40%;
+    top: 20%;
+    left: 10%;
+  }
+  
+  #title-4 {
+    font-size: 5rem;
+    top: 65%;
+    left: 40%;
+  }
+  
+  #title-5 {
+    font-size: 2rem;
+    top: 10%;
+    left: 10%;
+  }
+  
+  #order-now-btn {
+    position: absolute;
+    top: 50%;
+    left: 52%;
+    height: 40px;
+    width: 120px;
   }
 }

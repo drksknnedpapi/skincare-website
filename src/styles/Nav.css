@@ -33,6 +33,10 @@ nav li:first-child {
     margin-right: auto;
 }
 
+#logo {
+    width: 45%;
+}
+
 .sidebar {
     display: none; /* Default hidden */
 }
