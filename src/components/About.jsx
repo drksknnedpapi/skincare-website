@@ -35,7 +35,7 @@ const About = () => {
             <span id="title-5">Our Story</span>
             <a href="./products" target="_parent" rel="noopener noreferrer">
               <button className="button" id="order-now-btn">
-                Order Now
+                Catalogue
               </button>
             </a>
           </div>

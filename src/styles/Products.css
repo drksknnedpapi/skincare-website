@@ -13,4 +13,8 @@
 
 .products-section {
     padding: 3% 40px;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
